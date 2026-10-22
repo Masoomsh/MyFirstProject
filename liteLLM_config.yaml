@@ -1,0 +1,14 @@
+model_list:
+  - model_name: ollama-llama3.2
+    litellm_params:
+      model: ollama/llama3.2
+      api_base: http://localhost:11434
+      max_tokens: 2048
+      temperature: 0.7
+      top_p: 0.9
+ 
+litellm_settings:
+  drop_params: true
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
