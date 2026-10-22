@@ -46,7 +46,7 @@ def health():
 
 @app.get("/response")
 def response():
-    return {"message": ask_llm("How is the weather today ")}
+    return {"message": ask_llm("What is AI?")}
 
 
 @app.post("/chat")
